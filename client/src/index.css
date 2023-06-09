@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* * {
+  outline: red solid 1px;
+} */
+
+/* body {
+  overflow-y: hidden;
+} */
+
+/* .no-scrollbar::-webkit-scrollbar {
+  display: none;
+} */
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+@layer components {
+  .btn-primary {
+    @apply rounded-sm bg-[#FEEB8A] py-3 px-4 font-bold text-primary shadow-lg transition duration-300 ease-in hover:bg-[rgb(255,231,109)];
+  }
+
+  .btn-secondary {
+    @apply rounded-sm bg-primary py-3 px-4 font-bold text-white shadow-lg transition duration-300 ease-in hover:bg-secondary;
+  }
+
+  .btn-card {
+    @apply rounded-full bg-primary p-3 text-xs font-bold text-white shadow-lg transition duration-300 ease-in hover:bg-secondary md:py-3 md:px-4 md:text-base;
+  }
+}
